@@ -1,2 +1,3 @@
-# exerciosREPO
-Repositorio para o curso do m3 react
+ # Exercicios Kenzie Modulo 3 - React
+
+1- Canvas atividade-1
