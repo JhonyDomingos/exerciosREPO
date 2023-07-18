@@ -1,12 +1,18 @@
+import FooterComponent from "./components/footer"
+import AboutSectionComponent from "./components/about"
+import HeaderComponent from "./components/header"
+
 function App() {
 
  
 //Aqui posso fazer o javaScript 
   return (
     //Aqui é somente o JSX 
-    <>
-      <h1>Hello World</h1>
-    </>
+    <main className="App">
+      <HeaderComponent />
+        <AboutSectionComponent />
+        <FooterComponent />
+    </main>
   )
 }
 
