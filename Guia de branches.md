@@ -7,5 +7,7 @@ canvas-demo-atividade ou projeto + data da demo
 Aula-Canvas - nome/oque foi aprendido na aula
 
 1 - canvas-atividade-1
+
 2 - aula-canvas-componentes   
+
 3 - canvas-atividade-2
