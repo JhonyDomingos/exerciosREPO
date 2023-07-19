@@ -1,0 +1,11 @@
+:root {
+    --font-primnary: 'Oswald', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    
+    --color-white:#FFFF; 
+    --color-blaclk:#000000; 
+    
+    --weight700: 700; 
+    --weight500: 500; 
+    --weight400: 400; 
+}
