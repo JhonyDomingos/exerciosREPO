@@ -12,3 +12,4 @@ Aula-Canvas - nome/oque foi aprendido na aula
 
 3 - canvas-atividade-2
 4 - demo-18/07-projeto-landingpage
+5 - Atividade-canvas-2
