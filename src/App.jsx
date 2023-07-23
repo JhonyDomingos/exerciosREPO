@@ -1,12 +1,12 @@
+import { CardList } from "./components/CardList"
+import { fruits } from "./darta/data"
 function App() {
 
  
 //Aqui posso fazer o javaScript 
   return (
-    //Aqui é somente o JSX 
-    <>
-      <h1>Hello World</h1>
-    </>
+    fruits.map(fruit => (<CardList key={fruit.id} name={fruit.name} category={fruit.category} price={fruit.price}/>))
+   
   )
 }
 

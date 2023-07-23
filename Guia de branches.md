@@ -15,3 +15,5 @@ Aula-Canvas - nome/oque foi aprendido na aula
 4 - demo-18/07-projeto-landingpage
 
 5 - Atividade-canvas-2
+
+6 - Atividade-Canvas-3-Lista-de-Frutas
