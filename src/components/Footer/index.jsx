@@ -1,5 +1,9 @@
 export const Footer = () => {
-    return ( 
-        <p className="paragraph">Todos os direitos reservados - Kenzie Acadmey Brasil</p>
-    )
-}
+  return (
+    <div className="container">
+      <p className="paragraph">
+        Todos os direitos reservados - Kenzie Acadmey Brasil
+      </p>
+    </div>
+  );
+};

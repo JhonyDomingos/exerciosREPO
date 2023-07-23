@@ -1,25 +1,22 @@
-import { Fragment } from "react";
 import { BannerSection } from "../../components/BannerSection";
 import { CategorySection } from "../../components/CategorySection";
-import { Footer } from "../../components/Footer";
 import { NewsletterSection } from "../../components/NewsLetterSection";
 import { ProductSection } from "../../components/ProductSection";
-import { Header } from "../../components/header";
+import { DefaultTemplate } from "../../components/DefaultTemplate"
 
 //Fragment - TAG FANTASMA
 // <></> - Essa sintaxe não pode receber uma chave
 //<Fragment> </Fragment> - Essa pode receber uma chave
 export const HomePage = () => {
   return (
-    <Fragment>
-      <Header />
-      <main>
+
+    <DefaultTemplate>
+      {/* Isso é o valor de children para DefaltTemplate*/}
         <BannerSection />
         <CategorySection />
         <ProductSection />
-        <NewsletterSection />
-      </main>
-      <Footer />
-    </Fragment>
+        <NewsletterSection />     
+    </DefaultTemplate>
+
   );
 };

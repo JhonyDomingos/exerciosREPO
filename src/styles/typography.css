@@ -1,7 +1,11 @@
 
+/*
+clamp(valorMinimo, valorDeReferencia (tento sempre ficar nesse valor), valorMaximo) 
+*/
+
 .title {
     font-family: var(--font-primnary);
-    font-size: 6.25rem;
+    font-size:clamp(3rem, 10vw ,6.25rem);
     font-weight: var(--weight500);
     line-height:1.4;
     text-transform: uppercase;
@@ -10,7 +14,7 @@
 
 .title2 {
     font-family: var(--font-primnary);
-    font-size: 3.75rem;
+    font-size: clamp(2rem, 8vw, 3.75rem);
     font-weight: var(--weight500);
     line-height:1.4;
     text-transform: uppercase; 
@@ -22,6 +26,12 @@
     font-weight: var(--weight700);
     line-height:1.4;
     text-transform: uppercase;
+}
+
+.title.center,
+.title2.center,
+.title3.center {
+    text-align: center;
 }
 
 .price {

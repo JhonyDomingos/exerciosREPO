@@ -1,0 +1,43 @@
+.flexbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.625rem;
+    
+}
+
+.flexbox > img, 
+.flexbox > div  {
+    width: 100%;
+}
+
+@media (min-width: 870px ) {
+    .flexbox {
+        flex-direction: row;
+    }
+
+    .flexbox > img, 
+    .flexbox > div  {
+    width: 50%;
+}
+
+}
+
+.flexbox > img {
+    width: 600px;
+    height: 750px;
+  
+    border-radius:5rem;
+}
+.bannerSection {
+    padding: 2rem 0;
+}
+.bannerSection h1  {
+    margin-bottom: 1.875rem;
+}
+
+.bannerSection p {
+    margin-bottom: 6.25rem;
+
+}
