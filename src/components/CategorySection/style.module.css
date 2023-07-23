@@ -1,0 +1,15 @@
+.categorySection h2 {
+    margin-bottom: 3.75rem;
+}
+
+.categoryList {
+    display: flex;
+    gap: 3.75rem;
+    overflow: auto;
+    margin-right: -1rem;
+    padding: 0 1rem 1rem 0;
+}
+
+.categoryList li {
+     min-width: 174px;
+}

@@ -1,0 +1,18 @@
+.productSection h2  {
+    margin-bottom: 3.75rem;
+}
+
+.productList {
+    display: flex;
+    gap: 2.5rem;
+    overflow: auto;
+    margin-right: -1rem;
+    padding: 0 1rem 1rem 0;
+
+}
+
+.productList li {
+     min-width: 280px;
+}
+
+

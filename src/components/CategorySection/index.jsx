@@ -1,19 +1,22 @@
-import category1 from "../../assets/category1.svg";
-import category2 from "../../assets/category2.svg";
 import { CategoryCard } from "./CategoryCard";
+import { category } from "../../data/category";
+import styles from "./style.module.css"
 
 export const CategorySection = () => {
   return (
-    <div className="container">
-      <section>
+    <section className={styles.categorySection}>
+      <div className="container">
         <h2 className="title2">Categorias</h2>
-        <div>
-          <ul>
-            <CategoryCard title="Sapatos" img={category1} />
-            <CategoryCard title="Bolsas" img={category2} />
-          </ul>
-        </div>
-      </section>
-    </div>
+        <ul className={styles.categoryList}>
+          {category.map((category) => (
+            <CategoryCard
+              key={category.id}
+              title={category.name}
+              img={category.img}
+            />
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 };

@@ -10,3 +10,29 @@
     --weight400: 400; 
 }
 
+.categoryImG {
+    width: 7rem;    
+    border-radius: 50%;
+}
+.logo-img {
+    width: 12rem;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productimg {
+  width: 35%;
+}
+
+.containerIMG {    
+    width: 250px;
+    height: 15.625rem;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

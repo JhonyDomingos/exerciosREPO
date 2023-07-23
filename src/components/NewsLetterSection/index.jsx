@@ -1,12 +1,12 @@
 import { NewsletterForm } from "./NewsletterForm";
-
+import styles from "./style.module.css";
 export const NewsletterSection = () => {
   return (
-    <div className="container sm">
-      <section>
+    <section className={styles.newsletterSection}>
+      <div className="container sm">
         <h2 className="title2 center">INSCREVA-SE NA NEWSLETTER</h2>
         <NewsletterForm />
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };

@@ -1,0 +1,8 @@
+.form {
+    align-items: center;
+}
+
+.form input {
+    width: 100%;
+    max-width: 41.25rem;
+}
