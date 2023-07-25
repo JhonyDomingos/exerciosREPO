@@ -6,6 +6,8 @@ canvas-atividade-numero da atividade ou
 canvas-demo-atividade ou projeto + data da demo
 Aula-Canvas - nome/oque foi aprendido na aula
 
+# Sprint 1 
+
 1 - canvas-atividade-1
 
 2 - aula-canvas-componentes   
@@ -15,3 +17,7 @@ Aula-Canvas - nome/oque foi aprendido na aula
 4 - demo-18/07-projeto-landingpage
 
 5 - Atividade-canvas-2
+
+# Sprint 2 
+
+S1 - Demos project 
