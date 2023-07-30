@@ -24,9 +24,10 @@ export const ToDoSection = () => {
 
   return (
     <section>
-      
-      <TodoForm addNote={addNote} />
-      <TodoList noteList={noteList} removeNote={removeNote} />
+      <div className="container">
+        <TodoForm addNote={addNote} />
+        <TodoList noteList={noteList} removeNote={removeNote} />
+      </div>
     </section>
   );
 };

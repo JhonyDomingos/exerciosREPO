@@ -1,0 +1,18 @@
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    gap:.35rem;
+
+
+    input {
+        height: 2.875rem;
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: var(--font-primary);
+        background-color: var(--color-gray);
+        padding: 0 1.2rem;
+
+    }
+
+    
+}
