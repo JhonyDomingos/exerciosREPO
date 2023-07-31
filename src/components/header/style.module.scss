@@ -1,0 +1,14 @@
+.header {
+    background: var(--color-gray);
+    padding: clamp(.75rem, 2vw, 1.2rem ) 0;
+    
+    font-weight: 700;
+
+
+    .flexBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

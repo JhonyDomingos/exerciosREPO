@@ -1,0 +1,15 @@
+import styles from "./style.module.scss"
+export const Select = ({ children, id, label, value, setValue }) => {
+  return (
+    <div className={styles.selectBox}>
+      <label className="paragraph" htmlFor={id}>{label}</label>
+      <select
+        id={id}
+        name={id}
+        value={value}
+        onChange={(e) => setValue(e.target.value)}>
+        {children}
+      </select>
+    </div>
+  );
+};

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { TodoForm } from "../toDoForm";
 import { TodoList } from "./todoList";
-import { v4 as uuidv4 } from "uuid"; //Usando o uuid
-
+// import { v4 as uuidv4 } from "uuid"; //Usando o uuid
+import styles from "./style.module.scss"
 export const ToDoSection = () => {
   const [noteList, setNoteList] = useState([]);
 
@@ -21,12 +21,13 @@ export const ToDoSection = () => {
     const newList = noteList.filter((note) => note.id != removeId);
     setNoteList(newList);
   };
-
   return (
     <section>
       <div className="container">
+        <div className={styles.flexBox}>
         <TodoForm addNote={addNote} />
         <TodoList noteList={noteList} removeNote={removeNote} />
+        </div>
       </div>
     </section>
   );
