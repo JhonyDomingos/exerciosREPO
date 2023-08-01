@@ -1,45 +1,53 @@
+import { useState } from "react";
+import { blogApi, fruitApi } from "./services/api";
 
-import {PrimeiroComponente} from "./components/components"
+const App = () => {
+  //função de estado para armazenar o json da  API
+  const [fruitList, setFruitList] = useState([]);
+  const [blogList, setBlogList] = useState([]);
 
-import FooterComponent from "./components/footer"
-import AboutSectionComponent from "./components/about"
-import HeaderComponent from "./components/header"
+  const getFruits = async () => {
+    //await para lidar com promisses
+    //Podemos fazer as requisições do tipo GET só com o endereço da API
+    // const response = await fetch("https://fruit-fake-api.onrender.com/fruits");
+    // setFruitList(response);
 
-function App() {
+    // //retorna dados no formato JSON
+    // const json = await response.json();
+    // console.log(json);
+    const { data } = await fruitApi.get("/fruits");
+    setFruitList(data);
+  };
+  const getNews = async () => {
+    try {
+      const { data } = await blogApi.get("./ne32s");
+      setBlogList(data);
+      console.log(data);
+    } catch (error ){
+      console.log("Deu Ruim");
+      console.log(error)
 
-
-function App() {
-  const myDatas = {
-    nome: "Jhonatan Domingos",  
-    module: "Modúlo 3",
-    age: 31, 
-  }   
-      
+    }
+  };
   return (
-
-        //Aqui é somente o JSX    
-  
-      
-      <div>
-        <li>{myDatas.nome}</li>
-        <li>{myDatas.module}</li>
-        <li>{myDatas.age}</li>
-        <PrimeiroComponente />
+    <>
+      <div className="App">
+        <ul>
+          {fruitList.map((fruit) => {
+            return (
+              <li key={fruit.id}>
+                <h3>{fruit.name}</h3>
+                <p>{fruit.category}</p>
+                <p>{fruit.price}</p>
+              </li>
+            );
+          })}
+        </ul>
+        <button onClick={getFruits}>Carregar Frutas</button>
+        <button onClick={getNews}>Carregar noticias</button>
       </div>
-        
-      
-   
- 
-    
-=======
-    //Aqui é somente o JSX 
-    <main className="App">
-      <HeaderComponent />
-        <AboutSectionComponent />
-        <FooterComponent />
-    </main>
+    </>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
