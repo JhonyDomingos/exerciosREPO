@@ -1,15 +1,8 @@
-
+import { blogApi, fruitApi } from "./services/api";
+import { useState } from "react";
 import { NewsSection } from "./components/section";
 
-const App = () => {
-  return (
-    <div className="App">
-      <NewsSection />
-    </div>
-  )
 
-import { useState } from "react";
-import { blogApi, fruitApi } from "./services/api";
 
 const App = () => {
   //função de estado para armazenar o json da  API
@@ -44,6 +37,7 @@ const App = () => {
   return (
     <>
       <div className="App">
+      <NewsSection />
         <ul>
           {fruitList.map((fruit) => {
             return (
