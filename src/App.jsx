@@ -15,12 +15,12 @@ const App = () => {
     // //retorna dados no formato JSON
     // const json = await response.json();
     // console.log(json);
-    const { data } = await fruitApi.get("/fruits");
+    const { data } = await fruitApi.get("fruits");
     setFruitList(data);
   };
   const getNews = async () => {
     try {
-      const { data } = await blogApi.get("./news");
+      const { data } = await blogApi.get("news");
       setBlogList(data);
       console.log(data);
     } catch (error ){
