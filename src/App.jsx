@@ -20,12 +20,14 @@ const App = () => {
   };
   const getNews = async () => {
     try {
-      const { data } = await blogApi.get("./ne32s");
+      const { data } = await blogApi.get("./news");
       setBlogList(data);
       console.log(data);
     } catch (error ){
       console.log("Deu Ruim");
       console.log(error)
+    //  throw new Error("Deu ruim")
+    //  trhow quando é ultilizado , porém ele interrompe a execução do código.
 
     }
   };
