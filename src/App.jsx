@@ -1,15 +1,11 @@
-import { CardSection } from "./components/CardSection";
-import "./styles/index.css";
-function App() {
+import { NewsSection } from "./components/section";
 
-  return (    
+const App = () => {
+  return (
     <div className="App">
-      <CardSection name="João" age={28} country="Brasil"/>
-      <CardSection name="Gabriel" age={18} country="Argentina"/>
-      <CardSection name="Luiza" age={28} country="França"/>
+      <NewsSection />
     </div>
+  )
+};
 
-  );
-}
-
-export default App
+export default App;
